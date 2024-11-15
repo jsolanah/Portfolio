@@ -111,9 +111,6 @@ header nav a {
 }
 
 
-
-
-
 /* Estilos de las secciones y cards */
 .section {
     padding: 2rem;
@@ -134,7 +131,7 @@ header nav a {
 }
 
 .card, .project-card {
-    background: rgba(64, 64, 64, 0.); /* Fondo semitransparente */
+    background: rgba(58, 58, 58, 0.9); /* Fondo semitransparente */
     backdrop-filter: blur(10px); /* Efecto difuminado */
     padding: 1rem;
     margin: 0.5rem;
@@ -150,7 +147,7 @@ header nav a {
     justify-content: space-around;
 }
 
-.education, .experience {
+.education-experience {
     flex: 1;
     padding: 1.5rem;
     background: rgba(58, 58, 58, 0.9); /* Fondo con opacidad */
@@ -160,13 +157,13 @@ header nav a {
     box-shadow: 0 4px 8px #4A90E2;
 }
 
-.education h3{
+.project-card h3{
     text-align: center;
     color: #4A90E2; /* Azul agradable */
     margin-bottom: 1rem;
 }
 
-.experience h3{
+.education-experience h3{
     text-align: center;
     color: #4A90E2; /* Azul agradable */
     margin-bottom: 1rem;
@@ -176,7 +173,7 @@ header nav a {
 
 
 /* Estilo para cada ítem de educación */
-.edu-item {
+.edu-exp {
     background: rgba(64, 64, 64, 0.8); /* Fondo individual para cada tarjeta */
     padding: 1rem;
     margin: 1rem 0;
@@ -186,51 +183,21 @@ header nav a {
 }
 
 /* Efecto de hover para destacar cada tarjeta */
-.edu-item:hover {
+.edu-exp:hover {
     transform: scale(1.02); /* Ligeramente más grande al pasar el mouse */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra más intensa en hover */
 }
 
 /* Estilos para los títulos y párrafos en edu-item */
-.edu-item h4 {
+.edu-exp h4 {
     color: #4A90E2; /* Azul agradable para el título */
     margin-bottom: 0.5rem;
 }
 
-.edu-item p {
+.edu-exp p {
     color: #cccccc;
     font-size: 0.9rem;
 }
-
-
-/*Experiencia*/
-/* Estilo para cada ítem de educación */
-.exp-item {
-    background: rgba(64, 64, 64, 0.8); /* Fondo individual para cada tarjeta */
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
-    transition: transform 0.2s ease; /* Efecto de animación */
-}
-
-/* Efecto de hover para destacar cada tarjeta */
-.exp-item:hover {
-    transform: scale(1.02); /* Ligeramente más grande al pasar el mouse */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra más intensa en hover */
-}
-
-/* Estilos para los títulos y párrafos en edu-item */
-.exp-item h4 {
-    color: #4A90E2; /* Azul agradable para el título */
-    margin-bottom: 0.5rem;
-}
-
-.exp-item p {
-    color: #cccccc;
-    font-size: 0.9rem;
-}
-
 
 
 /* Footer */
@@ -242,15 +209,15 @@ footer {
     color: #cccccc;
 }
 
-/* Estilo para pantallas pequeñas (móviles) */
+/* Estilo para pantallas pequeñas (móviles) 
 @media (max-width: 768px) {
     .resumen {
-        flex-direction: column; /* Cambiar la dirección del layout a columna */
-        align-items: center; /* Alinear los elementos al centro */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .education, .experience {
-        flex: 1 1 100%; /* Cada sección toma el 100% del ancho disponible */
-        margin: 1rem 0; /* Espacio entre las secciones */
+        flex: 1 1 100%; 
+        margin: 1rem 0; 
     }
-}
+}*/
