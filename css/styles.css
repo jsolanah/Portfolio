@@ -135,40 +135,34 @@ header nav a {
     box-shadow: 0 4px 8px #4A90E2; /* Sombra para profundidad */
 }
 
-/* Resumen */
+/* Estilo general para la sección de resumen */
 .resumen {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas */
 }
 
-.project-card {
-    flex: 1 1 48%; /* Para que los elementos ocupen el 48% del ancho y se ajusten automáticamente */
-    margin: 1rem; /* Espacio entre las tarjetas */
-}
-
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-    .resumen {
-        flex-direction: column; /* Los divs se apilarán verticalmente en pantallas pequeñas */
-        align-items: center; /* Centra los elementos en la columna */
-    }
-
-    .project-card {
-        flex: 1 1 100%; /* Cada tarjeta ocupa el 100% del ancho disponible en pantallas pequeñas */
-        margin: 0.5rem 0; /* Espacio más pequeño entre las tarjetas */
-    }
-}
-
-/* Estilos para la sección de educación y experiencia */
-.education-experience {
-    flex: 1;
+.education, .experience {
+    flex: 1 1 45%; /* Por defecto, cada div ocupa el 45% del ancho */
     padding: 1.5rem;
     background: rgba(58, 58, 58, 0.9); /* Fondo con opacidad */
     backdrop-filter: blur(5px);
     margin: 0.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px #4A90E2;
+}
+
+/* Para pantallas de menos de 768px (dispositivos móviles) */
+@media (max-width: 768px) {
+    .resumen {
+        flex-direction: column; /* Cambia a columna para apilar los elementos */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .education, .experience {
+        flex: 1 1 100%; /* Cada div ocupa el 100% del ancho */
+        margin: 1rem 0; /* Espacio entre las secciones */
+    }
 }
 
 .project-card h3{
