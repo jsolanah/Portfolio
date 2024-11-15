@@ -241,3 +241,16 @@ footer {
     font-size: 0.9rem;
     color: #cccccc;
 }
+
+/* Estilo para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .resumen {
+        flex-direction: column; /* Cambiar la dirección del layout a columna */
+        align-items: center; /* Alinear los elementos al centro */
+    }
+
+    .education, .experience {
+        flex: 1 1 100%; /* Cada sección toma el 100% del ancho disponible */
+        margin: 1rem 0; /* Espacio entre las secciones */
+    }
+}
