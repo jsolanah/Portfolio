@@ -28,11 +28,7 @@ header .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: #4A90E2; /* Azul del logo */
-
-
 }
-
-
 
 header nav a {
     color: #ffffff;
@@ -40,31 +36,31 @@ header nav a {
     margin-left: 1rem;
 }
 
+/* Introducción */
 .intro {
     text-align: center;
     padding: 2rem;
     background-color: #333333;
-    /*width: 80%; /* Ancho del contenedor */
-    margin: 0 auto; /* Centra el contenedor */
+    margin: 0 auto;
 }
 
 .intro h1 {
     font-size: 2.5rem;
 }
+
 .justificado {
     text-align: unset;
     width: 50%;
-    margin: 0 auto; /* Espacio a los lados */
+    margin: 0 auto;
 }
 
-/* Centrar el botón horizontalmente en su línea */
-/* Centrar el botón horizontalmente en su línea */
+/* Redes Sociales */
 .socials {
     text-align: center;
     margin-top: 1rem;
     display: flex;
-    gap: 10px; /* Espacio entre los botones */
-    justify-content: center; /* Centra ambos botones en su línea */
+    gap: 10px;
+    justify-content: center;
 }
 
 /* Botón de LinkedIn */
@@ -86,7 +82,6 @@ header nav a {
 .linkedin-button:hover {
     background-color: white;
     color: #0077B5;
-
 }
 
 /* Botón de GitHub */
@@ -96,7 +91,7 @@ header nav a {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #232629; /* Color característico de GitHub */
+    background-color: #232629;
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
@@ -106,10 +101,9 @@ header nav a {
 }
 
 .github-button:hover {
-    background-color: white; /* Un tono más oscuro al hacer hover */
+    background-color: white;
     color: #232629;
 }
-
 
 /* Estilos de las secciones y cards */
 .section {
@@ -141,12 +135,32 @@ header nav a {
     box-shadow: 0 4px 8px #4A90E2; /* Sombra para profundidad */
 }
 
-/* Resumen
+/* Resumen */
 .resumen {
     display: flex;
-    justify-content: space-around;
-}*/
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
 
+.project-card {
+    flex: 1 1 48%; /* Para que los elementos ocupen el 48% del ancho y se ajusten automáticamente */
+    margin: 1rem; /* Espacio entre las tarjetas */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .resumen {
+        flex-direction: column; /* Los divs se apilarán verticalmente en pantallas pequeñas */
+        align-items: center; /* Centra los elementos en la columna */
+    }
+
+    .project-card {
+        flex: 1 1 100%; /* Cada tarjeta ocupa el 100% del ancho disponible en pantallas pequeñas */
+        margin: 0.5rem 0; /* Espacio más pequeño entre las tarjetas */
+    }
+}
+
+/* Estilos para la sección de educación y experiencia */
 .education-experience {
     flex: 1;
     padding: 1.5rem;
@@ -159,20 +173,17 @@ header nav a {
 
 .project-card h3{
     text-align: center;
-    color: #4A90E2; /* Azul agradable */
+    color: #4A90E2;
     margin-bottom: 1rem;
 }
 
 .education-experience h3{
     text-align: center;
-    color: #4A90E2; /* Azul agradable */
+    color: #4A90E2;
     margin-bottom: 1rem;
 }
 
 /* Fondo y estilo para la sección de educación */
-
-
-/* Estilo para cada ítem de educación */
 .edu-exp {
     background: rgba(64, 64, 64, 0.8); /* Fondo individual para cada tarjeta */
     padding: 1rem;
@@ -199,7 +210,6 @@ header nav a {
     font-size: 0.9rem;
 }
 
-
 /* Footer */
 footer {
     text-align: center;
@@ -208,16 +218,3 @@ footer {
     font-size: 0.9rem;
     color: #cccccc;
 }
-
-/* Estilo para pantallas pequeñas (móviles) 
-@media (max-width: 768px) {
-    .resumen {
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    .education, .experience {
-        flex: 1 1 100%; 
-        margin: 1rem 0; 
-    }
-}*/
