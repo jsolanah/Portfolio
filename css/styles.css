@@ -4,6 +4,7 @@
     --primario: #FFC107;
     --secundario: #0097A7;
     --gris: #757575;
+    --grisMedio: #b4a8a8;
     --grisClaro: #DFE9F3;
 }
 /*  Globales **/
@@ -26,7 +27,7 @@ html {
 body {
     font-size: 16px; /* 1rem = 10px */
     font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top, var(--gris) 0%, var(--grisClaro) 100% );
+    background-image: linear-gradient(to top, var(--grisMedio) 0%, var(--grisClaro) 100% );
 }
 .contenedor {
     max-width: 120rem;
